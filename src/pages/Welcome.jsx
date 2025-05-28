@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Typography, Row, Col, Button } from 'antd';
 import { BankOutlined, SmileOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -27,6 +28,7 @@ const spotStyle = (top, left, size, color, blur) => ({
 });
 
 export default function Welcome() {
+  const navigate = useNavigate();
   return (
     <div style={bgStyle}>
       {/* 动态光斑背景 */}
@@ -65,7 +67,7 @@ export default function Welcome() {
               type="primary"
               size="large"
               icon={<SmileOutlined />}
-              href="/dashboard"
+              onClick={()=>navigate('/dashboard')}
               style={{
                 fontSize: 20,
                 padding: '10px 48px',

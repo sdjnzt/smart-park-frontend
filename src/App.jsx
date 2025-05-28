@@ -17,15 +17,14 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from '@ant-design/icons';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
+import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
+import Dashboard from './pages/dd/Dashboard';
 import VisitorLayout from './pages/VisitorLayout';
 import EnergyLayout from './pages/energy/EnergyLayout';
 import Overview from './pages/energy/Overview';
 import Water from './pages/energy/Water';
 import Gas from './pages/energy/Gas';
 import Stat from './pages/energy/Stat';
-import Maintenance from './pages/Maintenance';
 import FireLayout from './pages/fire/FireLayout';
 import OverviewFire from './pages/fire/Overview';
 import Alarm from './pages/fire/Alarm';
@@ -45,13 +44,13 @@ import Parking from './pages/parking/Parking';
 import AccessLayout from './pages/AccessLayout';
 import Door from './pages/access/Door';
 import Auth from './pages/access/Auth';
-import Record from './pages/access/Record';
+
 import StatAccess from './pages/access/Stat';
 import VideoLayout from './pages/video/VideoLayout';
 import CameraList from './pages/video/CameraList';
 import LiveView from './pages/video/LiveView';
 import Playback from './pages/video/Playback';
-import System from './pages/System';
+
 import Appointment from './pages/visitor/Appointment';
 import Audit from './pages/visitor/Audit';
 import Blacklist from './pages/visitor/Blacklist';
@@ -310,7 +309,8 @@ function App() {
         </Header>
         <Content className="main-content">
           <Routes>
-            <Route path="/" element={<Welcome />} />
+            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/" element={<Navigate to="/welcome" replace />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/visitor" element={<VisitorLayout />}>
               <Route path="appointment" element={<Appointment />} />
