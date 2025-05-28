@@ -16,7 +16,7 @@ const mockDevices = Array.from({length: 30}, (_,i) => ({
   status: statusList[Math.floor(Math.random()*4)],
   location: `${Math.floor(i/5)+1}号楼${String.fromCharCode(65+i%3)}区`,
   manager: managers[i%5],
-  lastCheck: `2024-06-${(i%28+1).toString().padStart(2,'0')}`,
+  lastCheck: `2025-05-${(i%28+1).toString().padStart(2,'0')}`,
 }));
 const statusColors = { '在线': 'green', '离线': 'default', '异常': 'red', '待巡检': 'orange' };
 

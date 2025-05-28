@@ -3,9 +3,9 @@ import { Table, Tag, Button, Space, DatePicker, Input } from 'antd';
 import { ExportOutlined, SearchOutlined } from '@ant-design/icons';
 
 const mockLogs = [
-  { key: '1', time: '2024-06-01 09:00', user: '王建国', action: '登录系统', ip: '192.168.1.10', result: '成功' },
-  { key: '2', time: '2024-06-01 09:05', user: '李明', action: '修改用户', ip: '192.168.1.11', result: '成功' },
-  { key: '3', time: '2024-06-01 09:10', user: '赵云', action: '删除摄像头', ip: '192.168.1.12', result: '失败' },
+  { key: '1', time: '2025-05-01 09:00', user: '王建国', action: '登录系统', ip: '192.168.1.10', result: '成功' },
+  { key: '2', time: '2025-05-01 09:05', user: '李明', action: '修改用户', ip: '192.168.1.11', result: '成功' },
+  { key: '3', time: '2025-05-01 09:10', user: '赵云', action: '删除摄像头', ip: '192.168.1.12', result: '失败' },
 ];
 
 export default function LogAudit() {

@@ -4,7 +4,7 @@ import { UploadOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 
 const mockUsers = [
   { key: '1', name: '王建国', empId: 'E101', dept: '技术部', card: '100101', auth: '员工', valid: '2024-12-31', method: 'IC卡', status: '正常' },
-  { key: '2', name: '李明', empId: 'E102', dept: '行政部', card: '100102', auth: '访客', valid: '2024-06-30', method: '人脸', status: '挂失' },
+  { key: '2', name: '李明', empId: 'E102', dept: '行政部', card: '100102', auth: '访客', valid: '2025-05-30', method: '人脸', status: '挂失' },
   { key: '3', name: '赵云', empId: 'E103', dept: '管理层', card: '100103', auth: 'VIP', valid: '2025-12-31', method: 'IC卡+人脸', status: '正常' },
   { key: '4', name: '孙倩', empId: 'E104', dept: '财务部', card: '100104', auth: '员工', valid: '2024-07-15', method: 'IC卡', status: '正常' },
 ];

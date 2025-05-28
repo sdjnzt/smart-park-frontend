@@ -9,10 +9,10 @@ const { RangePicker } = DatePicker;
 // 模拟统计数据
 const mockStats = {
   byDate: [
-    { date: '2024-06-01', count: 12 },
-    { date: '2024-06-02', count: 18 },
-    { date: '2024-06-03', count: 9 },
-    { date: '2024-06-04', count: 15 },
+    { date: '2025-05-01', count: 12 },
+    { date: '2025-05-02', count: 18 },
+    { date: '2025-05-03', count: 9 },
+    { date: '2025-05-04', count: 15 },
   ],
   byStatus: [
     { status: '已进园', value: 20 },
