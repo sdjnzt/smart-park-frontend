@@ -17,7 +17,7 @@ const mockData = Array.from({length: 30}, (_,i) => ({
   id: i+1,
   name: randomName(),
   dept: randomDept(),
-  date: dayjs('2025-05-01').add(i%7,'day').format('YYYY-MM-DD'),
+  date: dayjs('2025-05-10').add(i%19,'day').format('YYYY-MM-DD'),
   signIn: randomTime(),
   signOut: randomTime('17:00'),
   status: randomStatus(),
