@@ -3,10 +3,10 @@ import { Table, Tag, Button, DatePicker, Input, Modal, Form, Select, Space, Tool
 import { ExportOutlined, EyeOutlined, EditOutlined } from '@ant-design/icons';
 
 const mockRecords = [
-  { key: '1', time: '2025-05-01 08:00', name: '王建国', dept: '技术部', door: '1号楼北门', type: '进', device: 'GATE-001', method: 'IC卡', remark: '' },
-  { key: '2', time: '2025-05-01 08:05', name: '李明', dept: '行政部', door: '2号楼南门', type: '出', device: 'DOOR-002', method: '人脸', remark: '' },
-  { key: '3', time: '2025-05-01 08:10', name: '赵云', dept: '管理层', door: '3号楼西门', type: '异常', device: 'GATE-003', method: 'IC卡', remark: '未授权通行' },
-  { key: '4', time: '2025-05-01 08:15', name: '孙倩', dept: '财务部', door: '4号楼东门', type: '进', device: 'DOOR-004', method: 'IC卡', remark: '' },
+  { key: '1', time: '2025-05-10 08:00', name: '王建国', dept: '技术部', door: '1号楼北门', type: '进', device: 'GATE-001', method: 'IC卡', remark: '' },
+  { key: '2', time: '2025-05-10 08:05', name: '李明', dept: '行政部', door: '2号楼南门', type: '出', device: 'DOOR-002', method: '人脸', remark: '' },
+  { key: '3', time: '2025-05-10 08:10', name: '赵云', dept: '管理层', door: '3号楼西门', type: '异常', device: 'GATE-003', method: 'IC卡', remark: '未授权通行' },
+  { key: '4', time: '2025-05-10 08:15', name: '孙倩', dept: '财务部', door: '4号楼东门', type: '进', device: 'DOOR-004', method: 'IC卡', remark: '' },
 ];
 
 const eventTypes = ['进', '出', '异常'];

@@ -5,10 +5,10 @@ import * as XLSX from 'xlsx';
 
 const statusColors = { '已进园': 'green', '已出园': 'blue', '未进园': 'orange', '异常': 'red' };
 const mockRecords = [
-  { key: '1', name: '张伟', phone: '13800000001', visitTime: '2025-05-02 10:00', host: '王建国', dept: '技术部', status: '已进园', purpose: '商务洽谈', log: ['10:00 进园'], remark: '正常' },
-  { key: '2', name: '李娜', phone: '13800000002', visitTime: '2025-05-02 14:00', host: '李明', dept: '行政部', status: '已出园', purpose: '面试', log: ['14:00 进园', '16:00 出园'], remark: '正常' },
-  { key: '3', name: '王磊', phone: '13800000003', visitTime: '2025-05-03 09:30', host: '赵云', dept: '管理层', status: '未进园', purpose: '技术交流', log: [], remark: '未到访' },
-  { key: '4', name: '赵敏', phone: '13800000004', visitTime: '2025-05-03 11:00', host: '王建国', dept: '技术部', status: '异常', purpose: '参观', log: ['11:00 进园'], remark: '超时未出园' },
+  { key: '1', name: '张伟', phone: '13800000001', visitTime: '2025-05-11 10:00', host: '王建国', dept: '技术部', status: '已进园', purpose: '商务洽谈', log: ['10:00 进园'], remark: '正常' },
+  { key: '2', name: '李娜', phone: '13800000002', visitTime: '2025-05-11 14:00', host: '李明', dept: '行政部', status: '已出园', purpose: '面试', log: ['14:00 进园', '16:00 出园'], remark: '正常' },
+  { key: '3', name: '王磊', phone: '13800000003', visitTime: '2025-05-12 09:30', host: '赵云', dept: '管理层', status: '未进园', purpose: '技术交流', log: [], remark: '未到访' },
+  { key: '4', name: '赵敏', phone: '13800000004', visitTime: '2025-05-12 11:00', host: '王建国', dept: '技术部', status: '异常', purpose: '参观', log: ['11:00 进园'], remark: '超时未出园' },
 ];
 
 export default function Record() {

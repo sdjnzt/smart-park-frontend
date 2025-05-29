@@ -22,9 +22,9 @@ const supplyList = [
 
 // 公告管理数据
 const announcementList = [
-  { id: 1, title: '关于五一放假通知', publisher: '行政部', publishTime: '2025-05-01 09:00:00', status: '已发布' },
-  { id: 2, title: '园区安全培训通知', publisher: '安全部', publishTime: '2025-05-05 10:00:00', status: '已发布' },
-  { id: 3, title: '新员工入职培训', publisher: '人事部', publishTime: '2025-05-08 14:00:00', status: '草稿' },
+  { id: 1, title: '关于五一放假通知', publisher: '行政部', publishTime: '2025-05-10 09:00:00', status: '已发布' },
+  { id: 2, title: '园区安全培训通知', publisher: '安全部', publishTime: '2025-05-14 10:00:00', status: '已发布' },
+  { id: 3, title: '新员工入职培训', publisher: '人事部', publishTime: '2025-05-16 14:00:00', status: '草稿' },
 ];
 
 export default function Office() {

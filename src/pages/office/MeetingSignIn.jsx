@@ -3,13 +3,13 @@ import { Card, Table, Button, Input, Tag, Modal, Space, Tooltip, QRCode, message
 import { SearchOutlined, ExportOutlined, QrcodeOutlined, InfoCircleOutlined } from '@ant-design/icons';
 
 const mockMeetings = [
-  { id: 1, title: '项目启动会', room: 'A101', time: '2025-06-01 09:00', total: 20, signed: 18, status: '进行中', signList: [
+  { id: 1, title: '项目启动会', room: 'A101', time: '2025-05-2809:00', total: 20, signed: 18, status: '进行中', signList: [
     { name: '王建国', time: '09:01' }, { name: '李明', time: '09:02' }, { name: '赵云', time: '09:03' }
   ] },
-  { id: 2, title: '产品评审', room: 'B201', time: '2025-06-02 14:00', total: 12, signed: 12, status: '已结束', signList: [
+  { id: 2, title: '产品评审', room: 'B201', time: '2025-05-27 14:00', total: 12, signed: 12, status: '已结束', signList: [
     { name: '孙倩', time: '14:01' }, { name: '陈梓涵', time: '14:02' }
   ] },
-  { id: 3, title: '技术分享', room: 'C301', time: '2025-06-03 15:00', total: 16, signed: 10, status: '未开始', signList: [] },
+  { id: 3, title: '技术分享', room: 'C301', time: '2025-05-27 15:00', total: 16, signed: 10, status: '未开始', signList: [] },
 ];
 
 const statusColors = { '进行中': 'blue', '已结束': 'green', '未开始': 'default' };

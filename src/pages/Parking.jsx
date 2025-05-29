@@ -7,8 +7,8 @@ const { Option } = Select;
 
 // 模拟出入口数据（2025年5月）
 const gateList = [
-  { id: 1, name: '北门', type: '车行', status: '正常', lastUpdate: '2025-05-01 08:00:00' },
-  { id: 2, name: '南门', type: '人行', status: '异常', lastUpdate: '2025-05-01 08:05:00' },
+  { id: 1, name: '北门', type: '车行', status: '正常', lastUpdate: '2025-05-10 08:00:00' },
+  { id: 2, name: '南门', type: '人行', status: '异常', lastUpdate: '2025-05-10 08:05:00' },
 ];
 
 // 模拟场区数据

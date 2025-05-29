@@ -14,7 +14,7 @@ export const purposes = ['商务洽谈', '面试', '设备维修', '参观', '�
 export const initAppointmentList = Array.from({length: 40}, (_,i) => ({
   id: i+1,
   name: genChineseName(),
-  visitTime: randomDate(new Date('2025-05-01'), new Date('2025-05-31')),
+  visitTime: randomDate(new Date('2025-05-10'), new Date('2025-05-31')),
   purpose: randomItem(purposes),
   host: genChineseName(),
   status: ['待审核','已通过','已拒绝'][Math.floor(Math.random()*3)]
@@ -22,7 +22,7 @@ export const initAppointmentList = Array.from({length: 40}, (_,i) => ({
 export const initAuditList = Array.from({length: 20}, (_,i) => ({
   id: i+1,
   name: genChineseName(),
-  visitTime: randomDate(new Date('2025-05-01'), new Date('2025-05-31')),
+  visitTime: randomDate(new Date('2025-05-10'), new Date('2025-05-31')),
   purpose: randomItem(purposes),
   host: genChineseName(),
   status: '待审核'
@@ -30,7 +30,7 @@ export const initAuditList = Array.from({length: 20}, (_,i) => ({
 export const initAuthList = Array.from({length: 20}, (_,i) => ({
   id: i+1,
   name: genChineseName(),
-  visitTime: randomDate(new Date('2025-05-01'), new Date('2025-05-31')),
+  visitTime: randomDate(new Date('2025-05-10'), new Date('2025-05-31')),
   access: randomItem(['大门','办公楼','会议室']),
   car: Math.random()>0.5 ? `鲁A${Math.floor(Math.random()*90000+10000)}` : '',
   status: ['已下发','未下发'][Math.floor(Math.random()*2)],
@@ -39,7 +39,7 @@ export const initAuthList = Array.from({length: 20}, (_,i) => ({
 export const initRecordList = Array.from({length: 30}, (_,i) => ({
   id: i+1,
   name: genChineseName(),
-  visitTime: randomDate(new Date('2025-05-01'), new Date('2025-05-31')),
+  visitTime: randomDate(new Date('2025-05-10'), new Date('2025-05-31')),
   purpose: randomItem(purposes),
   host: genChineseName(),
   status: ['已离开','在访'][Math.floor(Math.random()*2)]
@@ -48,7 +48,7 @@ export const initBlacklist = Array.from({length: 15}, (_,i) => ({
   id: i+1,
   name: genChineseName(),
   reason: randomItem(['多次违规','恶意闯入','未带证件','扰乱秩序','冒用身份']),
-  time: randomDate(new Date('2025-05-01'), new Date('2025-05-31')).slice(0,10)
+  time: randomDate(new Date('2025-05-10'), new Date('2025-05-31')).slice(0,10)
 }));
 export const statDataDay = Array.from({length: 7}, (_,i)=>({ date: `2025-05-0${i+1}`, count: Math.floor(Math.random()*10+3) }));
 export const statDataWeek = Array.from({length: 4}, (_,i)=>({ date: `第${i+1}周`, count: Math.floor(Math.random()*30+10) }));

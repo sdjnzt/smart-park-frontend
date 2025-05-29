@@ -8,11 +8,11 @@ const { Option } = Select;
 
 // 模拟摄像头数据（2025年5月）
 const cameraList = [
-  { id: 1, location: '大门', status: '在线', lastUpdate: '2025-05-01 08:00:00', stream: 'preview1.jpg' },
-  { id: 2, location: '停车场', status: '在线', lastUpdate: '2025-05-01 08:05:00', stream: 'preview2.jpg' },
-  { id: 3, location: '办公楼', status: '离线', lastUpdate: '2025-05-01 07:50:00', stream: 'preview3.jpg' },
-  { id: 4, location: '仓库', status: '在线', lastUpdate: '2025-05-01 08:10:00', stream: 'preview4.jpg' },
-  { id: 5, location: '园区西门', status: '在线', lastUpdate: '2025-05-01 08:12:00', stream: 'preview5.jpg' },
+  { id: 1, location: '大门', status: '在线', lastUpdate: '2025-05-10 08:00:00', stream: 'preview1.jpg' },
+  { id: 2, location: '停车场', status: '在线', lastUpdate: '2025-05-10 08:05:00', stream: 'preview2.jpg' },
+  { id: 3, location: '办公楼', status: '离线', lastUpdate: '2025-05-10 07:50:00', stream: 'preview3.jpg' },
+  { id: 4, location: '仓库', status: '在线', lastUpdate: '2025-05-10 08:10:00', stream: 'preview4.jpg' },
+  { id: 5, location: '园区西门', status: '在线', lastUpdate: '2025-05-10 08:12:00', stream: 'preview5.jpg' },
 ];
 
 // 模拟录像数据（2025年5月）

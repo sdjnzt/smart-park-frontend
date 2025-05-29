@@ -4,13 +4,13 @@ import { EnvironmentOutlined, ExclamationCircleOutlined, SearchOutlined, InfoCir
 
 // mock设备数据
 const mockDevices = [
-  { id: 1, name: '1号楼电梯', type: '电梯', status: '在线', location: '1号楼A区', manager: '王建国', lastCheck: '2025-05-01', alarm: false, lng: 117.120, lat: 36.650 },
-  { id: 2, name: '2号楼空调', type: '空调', status: '异常', location: '2号楼B区', manager: '李明', lastCheck: '2025-05-01', alarm: true, lng: 117.121, lat: 36.651 },
+  { id: 1, name: '1号楼电梯', type: '电梯', status: '在线', location: '1号楼A区', manager: '王建国', lastCheck: '2025-05-10', alarm: false, lng: 117.120, lat: 36.650 },
+  { id: 2, name: '2号楼空调', type: '空调', status: '异常', location: '2号楼B区', manager: '李明', lastCheck: '2025-05-10', alarm: true, lng: 117.121, lat: 36.651 },
   { id: 3, name: '3号楼消防', type: '消防', status: '离线', location: '3号楼C区', manager: '赵云', lastCheck: '2025-05-30', alarm: false, lng: 117.123, lat: 36.649 },
-  { id: 4, name: '1号楼照明', type: '照明', status: '在线', location: '1号楼A区', manager: '孙倩', lastCheck: '2025-05-01', alarm: false, lng: 117.127, lat: 36.652 },
+  { id: 4, name: '1号楼照明', type: '照明', status: '在线', location: '1号楼A区', manager: '孙倩', lastCheck: '2025-05-10', alarm: false, lng: 117.127, lat: 36.652 },
   { id: 5, name: '2号楼门禁', type: '门禁', status: '待巡检', location: '2号楼B区', manager: '陈梓涵', lastCheck: '2025-05-28', alarm: false, lng: 117.124, lat: 36.648 },
-  { id: 6, name: '3号楼空调', type: '空调', status: '异常', location: '3号楼C区', manager: '李思远', lastCheck: '2025-05-01', alarm: true, lng: 117.122, lat: 36.650 },
-  { id: 7, name: '1号楼消防', type: '消防', status: '在线', location: '1号楼A区', manager: '孙嘉禾', lastCheck: '2025-05-01', alarm: false, lng: 117.128, lat: 36.653 },
+  { id: 6, name: '3号楼空调', type: '空调', status: '异常', location: '3号楼C区', manager: '李思远', lastCheck: '2025-05-10', alarm: true, lng: 117.122, lat: 36.650 },
+  { id: 7, name: '1号楼消防', type: '消防', status: '在线', location: '1号楼A区', manager: '孙嘉禾', lastCheck: '2025-05-10', alarm: false, lng: 117.128, lat: 36.653 },
 ];
 
 const statusColors = { '在线': 'green', '离线': 'default', '异常': 'red', '待巡检': 'orange' };

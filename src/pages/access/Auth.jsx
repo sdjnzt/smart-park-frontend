@@ -16,10 +16,10 @@ const mockTemplates = [
 ];
 
 const mockHistory = [
-  { key: 'h1', name: '王建国', action: '分配权限', time: '2025-05-01 10:00', detail: '员工模板' },
-  { key: 'h2', name: '李明', action: '挂失', time: '2025-05-02 11:20', detail: '卡号100102' },
-  { key: 'h3', name: '赵云', action: '恢复', time: '2025-05-03 09:30', detail: '卡号100103' },
-  { key: 'h4', name: '孙倩', action: '分配权限', time: '2025-05-04 14:00', detail: '员工模板' },
+  { key: 'h1', name: '王建国', action: '分配权限', time: '2025-05-10 10:00', detail: '员工模板' },
+  { key: 'h2', name: '李明', action: '挂失', time: '2025-05-11 11:20', detail: '卡号100102' },
+  { key: 'h3', name: '赵云', action: '恢复', time: '2025-05-12 09:30', detail: '卡号100103' },
+  { key: 'h4', name: '孙倩', action: '分配权限', time: '2025-05-13 14:00', detail: '员工模板' },
 ];
 
 const templatesOptions = mockTemplates.map(t => ({ value: t.name, label: t.name }));

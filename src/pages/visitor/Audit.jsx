@@ -6,7 +6,7 @@ import * as XLSX from 'xlsx';
 const statusColors = { '待审核': 'orange', '已通过': 'green', '已拒绝': 'red', '已撤销': 'default' };
 const mockAudits = [
   {
-    key: '1', name: '陈梓涵', phone: '18653128801', visitTime: '2025-05-10 09:00', host: '王建国', dept: '技术部', status: '待审核', purpose: '技术交流', log: ['2025-05-09 提交申请', '2025-05-09 审核中'] },
+    key: '1', name: '陈梓涵', phone: '18653128801', visitTime: '2025-05-10 09:00', host: '王建国', dept: '技术部', status: '待审核', purpose: '技术交流', log: ['2025-05-17 提交申请', '2025-05-17 审核中'] },
   {
     key: '2', name: '李思远', phone: '18560091234', visitTime: '2025-05-11 14:30', host: '李明', dept: '行政部', status: '已通过', purpose: '商务洽谈', log: ['2025-05-10 提交申请', '2025-05-10 审核通过'] },
   {

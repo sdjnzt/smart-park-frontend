@@ -7,8 +7,8 @@ const { Option } = Select;
 
 // 模拟报警主机数据（2025年5月）
 const hostList = [
-  { id: 1, name: '主机A', status: '在线', area: '1号楼', lastUpdate: '2025-05-01 08:00:00' },
-  { id: 2, name: '主机B', status: '离线', area: '2号楼', lastUpdate: '2025-05-01 07:50:00' },
+  { id: 1, name: '主机A', status: '在线', area: '1号楼', lastUpdate: '2025-05-10 08:00:00' },
+  { id: 2, name: '主机B', status: '离线', area: '2号楼', lastUpdate: '2025-05-10 07:50:00' },
 ];
 
 // 模拟防区数据
