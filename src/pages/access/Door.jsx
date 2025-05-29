@@ -14,10 +14,10 @@ const mockDevices = [
     manager: '王建国',
     health: '正常',
     firmware: 'v2.1.3',
-    nextMaintain: '2025-07-01',
+    nextMaintain: '2025-05-20',
     logs: [
       { time: '2025-05-10 09:12', action: '远程开门', user: '管理员' },
-      { time: '2025-05-30 15:00', action: '固件升级', user: '技术员' },
+      { time: '2025-05-20 15:00', action: '固件升级', user: '技术员' },
     ],
   },
   {
@@ -27,13 +27,13 @@ const mockDevices = [
     location: '2号楼南门',
     status: 'offline',
     type: '门禁',
-    lastOp: '2025-05-31 18:22',
+    lastOp: '2025-05-18 18:22',
     manager: '李明',
     health: '故障',
     firmware: 'v2.0.9',
-    nextMaintain: '2025-05-10',
+    nextMaintain: '2025-05-15',
     logs: [
-      { time: '2025-05-31 18:22', action: '设备离线', user: '系统' },
+      { time: '2025-05-18 18:22', action: '设备离线', user: '系统' },
       { time: '2025-05-20 10:00', action: '维护保养', user: '李明' },
     ],
   },
@@ -44,13 +44,13 @@ const mockDevices = [
     location: '3号楼西门',
     status: 'online',
     type: '闸机',
-    lastOp: '2025-05-10 08:45',
+    lastOp: '2025-05-12 08:45',
     manager: '赵云',
     health: '正常',
     firmware: 'v2.1.3',
-    nextMaintain: '2025-08-01',
+    nextMaintain: '2025-05-25',
     logs: [
-      { time: '2025-05-10 08:45', action: '远程关门', user: '管理员' },
+      { time: '2025-05-12 08:45', action: '远程关门', user: '管理员' },
       { time: '2025-05-15 09:00', action: '维护保养', user: '赵云' },
     ],
   },
@@ -65,7 +65,7 @@ const mockDevices = [
     manager: '孙倩',
     health: '正常',
     firmware: 'v2.2.0',
-    nextMaintain: '2025-07-15',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-10 10:00', action: '远程开门', user: '管理员' },
       { time: '2025-05-10 14:00', action: '固件升级', user: '技术员' },
@@ -82,7 +82,7 @@ const mockDevices = [
     manager: '陈梓涵',
     health: '正常',
     firmware: 'v2.2.1',
-    nextMaintain: '2025-08-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-11 11:00', action: '远程开门', user: '管理员' },
       { time: '2025-05-10 10:00', action: '维护保养', user: '陈梓涵' },
@@ -99,7 +99,7 @@ const mockDevices = [
     manager: '李思远',
     health: '故障',
     firmware: 'v2.0.8',
-    nextMaintain: '2025-05-10',
+    nextMaintain: '2025-05-15',
     logs: [
       { time: '2025-05-15 09:30', action: '设备离线', user: '系统' },
       { time: '2025-05-10 09:00', action: '维护保养', user: '李思远' },
@@ -116,7 +116,7 @@ const mockDevices = [
     manager: '孙嘉禾',
     health: '正常',
     firmware: 'v2.1.5',
-    nextMaintain: '2025-09-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-12 08:20', action: '远程开门', user: '管理员' },
       { time: '2025-05-10 10:00', action: '维护保养', user: '孙嘉禾' },
@@ -133,7 +133,7 @@ const mockDevices = [
     manager: '王子睿',
     health: '正常',
     firmware: 'v2.2.2',
-    nextMaintain: '2025-10-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-13 09:40', action: '远程开门', user: '管理员' },
       { time: '2025-08-01 10:00', action: '维护保养', user: '王子睿' },
@@ -150,7 +150,7 @@ const mockDevices = [
     manager: '高子墨',
     health: '故障',
     firmware: 'v2.0.7',
-    nextMaintain: '2025-11-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-20 12:00', action: '设备离线', user: '系统' },
       { time: '2025-05-15 09:00', action: '维护保养', user: '高子墨' },
@@ -167,7 +167,7 @@ const mockDevices = [
     manager: '许思辰',
     health: '正常',
     firmware: 'v2.2.3',
-    nextMaintain: '2025-12-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-14 10:30', action: '远程开门', user: '管理员' },
       { time: '2025-05-10 10:00', action: '维护保养', user: '许思辰' },
@@ -184,7 +184,7 @@ const mockDevices = [
     manager: '罗一帆',
     health: '正常',
     firmware: 'v2.1.6',
-    nextMaintain: '2026-01-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-05-15 11:15', action: '远程开门', user: '管理员' },
       { time: '2025-05-10 10:00', action: '维护保养', user: '罗一帆' },
@@ -201,7 +201,7 @@ const mockDevices = [
     manager: '贾嘉懿',
     health: '故障',
     firmware: 'v2.0.6',
-    nextMaintain: '2026-02-01',
+    nextMaintain: '2025-05-28',
     logs: [
       { time: '2025-08-10 13:00', action: '设备离线', user: '系统' },
       { time: '2025-05-10 09:00', action: '维护保养', user: '贾嘉懿' },

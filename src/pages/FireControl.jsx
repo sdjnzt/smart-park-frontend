@@ -9,20 +9,20 @@ const { RangePicker } = DatePicker;
 // 消防设备台账数据（2025年5月）
 const deviceList = [
   { id: 1, name: '灭火器', type: '干粉灭火器', location: 'A区1楼', status: '正常', lastCheck: '2025-05-10 08:00:00' },
-  { id: 2, name: '烟感探测器', type: '光电式', location: 'B区2楼', status: '正常', lastCheck: '2025-05-10 08:05:00' },
-  { id: 3, name: '喷淋系统', type: '自动喷淋', location: 'C区3楼', status: '异常', lastCheck: '2025-05-10 08:10:00' },
+  { id: 2, name: '烟感探测器', type: '光电式', location: 'B区2楼', status: '正常', lastCheck: '2025-05-15 09:05:00' },
+  { id: 3, name: '喷淋系统', type: '自动喷淋', location: 'C区3楼', status: '异常', lastCheck: '2025-05-20 10:10:00' },
 ];
 
 // 消防报警数据
 const alarmList = [
-  { id: 11, device: '烟感探测器', location: 'B区2楼', alarm: '烟雾报警', time: '2025-05-11 09:00:00', status: '未处理' },
-  { id: 12, device: '喷淋系统', location: 'C区3楼', alarm: '水压异常', time: '2025-05-12 10:00:00', status: '已处理' },
+  { id: 11, device: '烟感探测器', location: 'B区2楼', alarm: '烟雾报警', time: '2025-05-12 09:00:00', status: '未处理' },
+  { id: 12, device: '喷淋系统', location: 'C区3楼', alarm: '水压异常', time: '2025-05-18 10:00:00', status: '已处理' },
 ];
 
 // 消防巡检数据
 const inspectionList = [
-  { id: 21, task: '5月例行巡检', device: '灭火器', inspector: '李明', time: '2025-05-13 14:00:00', result: '正常' },
-  { id: 22, task: '5月例行巡检', device: '喷淋系统', inspector: '赵秀玲', time: '2025-05-13 14:30:00', result: '异常' },
+  { id: 21, task: '5月例行巡检', device: '灭火器', inspector: '李明', time: '2025-05-14 14:00:00', result: '正常' },
+  { id: 22, task: '5月例行巡检', device: '喷淋系统', inspector: '赵秀玲', time: '2025-05-22 14:30:00', result: '异常' },
 ];
 
 // 消防统计报表数据

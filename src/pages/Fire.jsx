@@ -8,26 +8,26 @@ const { Option } = Select;
 // 模拟报警主机数据（2025年5月）
 const hostList = [
   { id: 1, name: '主机A', status: '在线', area: '1号楼', lastUpdate: '2025-05-10 08:00:00' },
-  { id: 2, name: '主机B', status: '离线', area: '2号楼', lastUpdate: '2025-05-10 07:50:00' },
+  { id: 2, name: '主机B', status: '离线', area: '2号楼', lastUpdate: '2025-05-18 07:50:00' },
 ];
 
 // 模拟防区数据
 const zoneList = [
-  { id: 101, name: '1号楼-1层', host: '主机A', type: '烟感', status: '布防', lastAlarm: '2025-05-10 09:00:00' },
-  { id: 102, name: '1号楼-2层', host: '主机A', type: '门磁', status: '撤防', lastAlarm: '2025-05-11 10:00:00' },
-  { id: 103, name: '2号楼-1层', host: '主机B', type: '红外', status: '布防', lastAlarm: '2025-05-12 11:00:00' },
+  { id: 101, name: '1号楼-1层', host: '主机A', type: '烟感', status: '布防', lastAlarm: '2025-05-12 09:00:00' },
+  { id: 102, name: '1号楼-2层', host: '主机A', type: '门磁', status: '撤防', lastAlarm: '2025-05-20 10:00:00' },
+  { id: 103, name: '2号楼-1层', host: '主机B', type: '红外', status: '布防', lastAlarm: '2025-05-28 11:00:00' },
 ];
 
 // 模拟报警记录
 const alarmList = [
-  { id: 201, zone: '1号楼-1层', type: '烟感报警', time: '2025-05-10 09:01:00', status: '已处理' },
-  { id: 202, zone: '2号楼-1层', type: '红外报警', time: '2025-05-12 11:05:00', status: '未处理' },
+  { id: 201, zone: '1号楼-1层', type: '烟感报警', time: '2025-05-12 09:01:00', status: '已处理' },
+  { id: 202, zone: '2号楼-1层', type: '红外报警', time: '2025-05-20 11:05:00', status: '未处理' },
 ];
 
 // 模拟联动记录
 const linkList = [
-  { id: 301, alarm: '烟感报警', action: '联动视频', time: '2025-05-10 09:01:10', result: '成功' },
-  { id: 302, alarm: '红外报警', action: '抓拍', time: '2025-05-12 11:05:10', result: '成功' },
+  { id: 301, alarm: '烟感报警', action: '联动视频', time: '2025-05-12 09:01:10', result: '成功' },
+  { id: 302, alarm: '红外报警', action: '抓拍', time: '2025-05-20 11:05:10', result: '成功' },
 ];
 
 export default function Fire() {

@@ -8,29 +8,29 @@ const { Option } = Select;
 // 模拟门禁设备数据（2025年5月）
 const deviceList = [
   { id: 1, location: '大门', status: '正常', lastUpdate: '2025-05-10 08:00:00' },
-  { id: 2, location: '办公楼', status: '正常', lastUpdate: '2025-05-10 08:05:00' },
-  { id: 3, location: '停车场', status: '异常', lastUpdate: '2025-05-10 07:50:00' },
-  { id: 4, location: '仓库', status: '正常', lastUpdate: '2025-05-10 08:10:00' },
+  { id: 2, location: '办公楼', status: '正常', lastUpdate: '2025-05-14 08:05:00' },
+  { id: 3, location: '停车场', status: '异常', lastUpdate: '2025-05-18 07:50:00' },
+  { id: 4, location: '仓库', status: '正常', lastUpdate: '2025-05-22 08:10:00' },
 ];
 
 // 模拟权限分配数据
 const permissionList = [
-  { id: 101, user: '李明', role: '员工', access: ['大门', '办公楼'], validFrom: '2025-05-10', validTo: '2025-05-31' },
-  { id: 102, user: '赵秀玲', role: '访客', access: ['大门'], validFrom: '2025-05-10', validTo: '2025-05-12' },
-  { id: 103, user: '李利英', role: '安保', access: ['大门', '办公楼', '仓库'], validFrom: '2025-05-10', validTo: '2025-05-31' },
+  { id: 101, user: '李明', role: '员工', access: ['大门', '办公楼'], validFrom: '2025-05-10', validTo: '2025-05-28' },
+  { id: 102, user: '赵秀玲', role: '访客', access: ['大门'], validFrom: '2025-05-12', validTo: '2025-05-14' },
+  { id: 103, user: '李利英', role: '安保', access: ['大门', '办公楼', '仓库'], validFrom: '2025-05-10', validTo: '2025-05-28' },
 ];
 
 // 模拟进出记录
 const recordList = [
   { id: 201, user: '李明', location: '大门', time: '2025-05-10 08:10:00', type: '进', method: '刷卡' },
-  { id: 202, user: '赵秀玲', location: '大门', time: '2025-05-10 09:00:00', type: '进', method: '二维码' },
-  { id: 203, user: '李利英', location: '仓库', time: '2025-05-11 10:00:00', type: '出', method: '刷卡' },
+  { id: 202, user: '赵秀玲', location: '大门', time: '2025-05-14 09:00:00', type: '进', method: '二维码' },
+  { id: 203, user: '李利英', location: '仓库', time: '2025-05-18 10:00:00', type: '出', method: '刷卡' },
 ];
 
 // 模拟异常报警
 const alarmList = [
   { id: 301, location: '停车场', time: '2025-05-12 12:00:00', type: '强行闯入', status: '未处理' },
-  { id: 302, location: '办公楼', time: '2025-05-13 14:20:00', type: '门未关好', status: '已处理' },
+  { id: 302, location: '办公楼', time: '2025-05-18 14:20:00', type: '门未关好', status: '已处理' },
 ];
 
 export default function Access() {

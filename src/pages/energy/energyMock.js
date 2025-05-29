@@ -5,7 +5,18 @@ function randomName(prefix) {
   return prefix + names[Math.floor(Math.random()*names.length)] + (Math.floor(Math.random()*10)+1);
 }
 function randomStatus() { return Math.random() > 0.15 ? '正常' : '异常'; }
-function randomDate() { const d = new Date(2025,4,Math.floor(Math.random()*30)+1,8+Math.floor(Math.random()*10),Math.floor(Math.random()*60),0); return d.toISOString().slice(0,19).replace('T',' '); }
+function randomDate() {
+  // 生成 2025-05-10 到 2025-05-28 之间的随机日期字符串
+  const start = new Date('2025-05-10').getTime();
+  const end = new Date('2025-05-28').getTime();
+  const date = new Date(start + Math.random() * (end - start));
+  return date.getFullYear() + '-' + 
+    String(date.getMonth() + 1).padStart(2, '0') + '-' + 
+    String(date.getDate()).padStart(2, '0') + ' ' +
+    String(date.getHours()).padStart(2, '0') + ':' +
+    String(date.getMinutes()).padStart(2, '0') + ':' +
+    String(date.getSeconds()).padStart(2, '0');
+}
 
 export const initOverviewData = Array.from({length: 40}, (_,i) => ({
   id: i+1,
