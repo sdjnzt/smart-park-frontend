@@ -3,10 +3,10 @@ import { Card, Row, Col, DatePicker, Select, Button, Slider, Space, message, Inp
 import { DownloadOutlined, FastBackwardOutlined, FastForwardOutlined, PauseOutlined, PlayCircleOutlined, SearchOutlined } from '@ant-design/icons';
 
 const cameras = [
-  { key: '1', name: '1号楼北门摄像头', url: `${import.meta.env.BASE_URL}static/222.jpg` },
-  { key: '2', name: '2号楼南门球机', url: `${import.meta.env.BASE_URL}static/333.jpg` },
-  { key: '3', name: '3号楼西门枪机', url: `${import.meta.env.BASE_URL}static/444.png` },
-  { key: '4', name: '1号楼大厅球机', url: `${import.meta.env.BASE_URL}static/888.png` },
+  { key: '1', name: '1号楼大门', url: `${import.meta.env.BASE_URL}static/222.jpg` },
+  { key: '2', name: '2号楼大门', url: `${import.meta.env.BASE_URL}static/333.jpg` },
+  { key: '3', name: '3号楼大门', url: `${import.meta.env.BASE_URL}static/444.png` },
+  { key: '4', name: '4号楼大门', url: `${import.meta.env.BASE_URL}static/888.png` },
 ];
 
 export default function Playback() {

@@ -15,16 +15,16 @@ const deviceList = [
 
 // 模拟权限分配数据
 const permissionList = [
-  { id: 101, user: '张三', role: '员工', access: ['大门', '办公楼'], validFrom: '2025-05-01', validTo: '2025-05-31' },
-  { id: 102, user: '李四', role: '访客', access: ['大门'], validFrom: '2025-05-10', validTo: '2025-05-12' },
-  { id: 103, user: '王五', role: '安保', access: ['大门', '办公楼', '仓库'], validFrom: '2025-05-01', validTo: '2025-05-31' },
+  { id: 101, user: '李明', role: '员工', access: ['大门', '办公楼'], validFrom: '2025-05-01', validTo: '2025-05-31' },
+  { id: 102, user: '赵秀玲', role: '访客', access: ['大门'], validFrom: '2025-05-10', validTo: '2025-05-12' },
+  { id: 103, user: '李利英', role: '安保', access: ['大门', '办公楼', '仓库'], validFrom: '2025-05-01', validTo: '2025-05-31' },
 ];
 
 // 模拟进出记录
 const recordList = [
-  { id: 201, user: '张三', location: '大门', time: '2025-05-10 08:10:00', type: '进', method: '刷卡' },
-  { id: 202, user: '李四', location: '大门', time: '2025-05-10 09:00:00', type: '进', method: '二维码' },
-  { id: 203, user: '王五', location: '仓库', time: '2025-05-11 10:00:00', type: '出', method: '刷卡' },
+  { id: 201, user: '李明', location: '大门', time: '2025-05-10 08:10:00', type: '进', method: '刷卡' },
+  { id: 202, user: '赵秀玲', location: '大门', time: '2025-05-10 09:00:00', type: '进', method: '二维码' },
+  { id: 203, user: '李利英', location: '仓库', time: '2025-05-11 10:00:00', type: '出', method: '刷卡' },
 ];
 
 // 模拟异常报警

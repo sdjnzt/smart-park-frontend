@@ -3,10 +3,10 @@ import { Card, Row, Col, Select, Button, Space, Modal, message } from 'antd';
 import { FullscreenOutlined, CameraOutlined, UpOutlined, DownOutlined, LeftOutlined, RightOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 
 const allCameras = [
-  { key: '1', name: '1号楼北门摄像头', url: `${import.meta.env.BASE_URL}static/222.jpg`, resolution: '1920x1080', stream: '主码流' },
-  { key: '2', name: '2号楼南门球机', url: `${import.meta.env.BASE_URL}static/333.jpg`, resolution: '1280x720', stream: '子码流' },
-  { key: '3', name: '3号楼西门枪机', url: `${import.meta.env.BASE_URL}static/444.png`, resolution: '1920x1080', stream: '主码流' },
-  { key: '4', name: '1号楼大厅球机', url: `${import.meta.env.BASE_URL}static/888.png`, resolution: '1280x720', stream: '子码流' },
+  { key: '1', name: '1号楼大门', url: `${import.meta.env.BASE_URL}static/222.jpg`, resolution: '1920x1080', stream: '主码流' },
+  { key: '2', name: '2号楼大门', url: `${import.meta.env.BASE_URL}static/333.jpg`, resolution: '1280x720', stream: '子码流' },
+  { key: '3', name: '3号楼大门', url: `${import.meta.env.BASE_URL}static/444.png`, resolution: '1920x1080', stream: '主码流' },
+  { key: '4', name: '4号楼大门', url: `${import.meta.env.BASE_URL}static/888.png`, resolution: '1280x720', stream: '子码流' },
 ];
 
 const splitModes = [

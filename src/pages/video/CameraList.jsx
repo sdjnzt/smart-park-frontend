@@ -3,16 +3,16 @@ import { Table, Tag, Button, Space, Select, Modal, Input, Drawer, List, Badge, m
 import { PlusOutlined, DeleteOutlined, InfoCircleOutlined } from '@ant-design/icons';
 
 const mockCameras = [
-  { key: '1', name: '1号楼北门摄像头', code: 'CAM-001', location: '1号楼北门', group: '1号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:00', install: '2022-03-01', manager: '王建国', logs: [{ time: '2024-05-30', action: '固件升级', user: '管理员' }] },
-  { key: '2', name: '2号楼南门球机', code: 'CAM-002', location: '2号楼南门', group: '2号楼', status: '离线', type: '球机', lastOnline: '2024-05-31 18:00', install: '2022-04-15', manager: '李明', logs: [{ time: '2024-05-20', action: '维护保养', user: '李明' }] },
-  { key: '3', name: '3号楼西门枪机', code: 'CAM-003', location: '3号楼西门', group: '3号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 08:50', install: '2022-05-10', manager: '赵云', logs: [{ time: '2024-05-10', action: '固件升级', user: '管理员' }] },
-  { key: '4', name: '1号楼大厅球机', code: 'CAM-004', location: '1号楼大厅', group: '1号楼', status: '在线', type: '球机', lastOnline: '2025-05-01 09:10', install: '2022-03-05', manager: '王建国', logs: [{ time: '2024-05-28', action: '维护保养', user: '王建国' }] },
-  { key: '5', name: '2号楼停车场枪机', code: 'CAM-005', location: '2号楼停车场', group: '2号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:12', install: '2022-04-20', manager: '李明', logs: [{ time: '2024-05-25', action: '固件升级', user: '管理员' }] },
-  { key: '6', name: '3号楼屋顶球机', code: 'CAM-006', location: '3号楼屋顶', group: '3号楼', status: '离线', type: '球机', lastOnline: '2024-05-30 17:00', install: '2022-05-20', manager: '赵云', logs: [{ time: '2024-05-18', action: '维护保养', user: '赵云' }] },
-  { key: '7', name: '1号楼电梯间枪机', code: 'CAM-007', location: '1号楼电梯间', group: '1号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:15', install: '2022-03-10', manager: '王建国', logs: [{ time: '2024-05-29', action: '固件升级', user: '管理员' }] },
-  { key: '8', name: '2号楼大堂球机', code: 'CAM-008', location: '2号楼大堂', group: '2号楼', status: '在线', type: '球机', lastOnline: '2025-05-01 09:18', install: '2022-04-25', manager: '李明', logs: [{ time: '2024-05-27', action: '维护保养', user: '李明' }] },
-  { key: '9', name: '3号楼地下室枪机', code: 'CAM-009', location: '3号楼地下室', group: '3号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:20', install: '2022-05-25', manager: '赵云', logs: [{ time: '2024-05-22', action: '固件升级', user: '管理员' }] },
-  { key: '10', name: '1号楼门厅球机', code: 'CAM-010', location: '1号楼门厅', group: '1号楼', status: '离线', type: '球机', lastOnline: '2024-05-29 16:00', install: '2022-03-15', manager: '王建国', logs: [{ time: '2024-05-15', action: '维护保养', user: '王建国' }] },
+  { key: '1', name: '1号楼大门', code: 'CAM-001', location: '1号楼北门', group: '1号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:00', install: '2022-03-01', manager: '王建国', logs: [{ time: '2025-05-30', action: '固件升级', user: '管理员' }] },
+  { key: '2', name: '2号楼大门', code: 'CAM-002', location: '2号楼南门', group: '2号楼', status: '离线', type: '球机', lastOnline: '2025-05-31 18:00', install: '2022-04-15', manager: '李明', logs: [{ time: '2025-05-20', action: '维护保养', user: '李明' }] },
+  { key: '3', name: '3号楼大门', code: 'CAM-003', location: '3号楼西门', group: '3号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 08:50', install: '2022-05-10', manager: '赵云', logs: [{ time: '2025-05-10', action: '固件升级', user: '管理员' }] },
+  { key: '4', name: '4号楼大门', code: 'CAM-004', location: '1号楼大厅', group: '1号楼', status: '在线', type: '球机', lastOnline: '2025-05-01 09:10', install: '2022-03-05', manager: '王建国', logs: [{ time: '2025-05-28', action: '维护保养', user: '王建国' }] },
+  { key: '5', name: '2号楼停车场枪机', code: 'CAM-005', location: '2号楼停车场', group: '2号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:12', install: '2022-04-20', manager: '李明', logs: [{ time: '2025-05-25', action: '固件升级', user: '管理员' }] },
+  { key: '6', name: '3号楼屋顶球机', code: 'CAM-006', location: '3号楼屋顶', group: '3号楼', status: '离线', type: '球机', lastOnline: '2025-05-30 17:00', install: '2022-05-20', manager: '赵云', logs: [{ time: '2025-05-18', action: '维护保养', user: '赵云' }] },
+  { key: '7', name: '1号楼电梯间枪机', code: 'CAM-007', location: '1号楼电梯间', group: '1号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:15', install: '2022-03-10', manager: '王建国', logs: [{ time: '2025-05-29', action: '固件升级', user: '管理员' }] },
+  { key: '8', name: '2号楼大堂球机', code: 'CAM-008', location: '2号楼大堂', group: '2号楼', status: '在线', type: '球机', lastOnline: '2025-05-01 09:18', install: '2022-04-25', manager: '李明', logs: [{ time: '2025-05-27', action: '维护保养', user: '李明' }] },
+  { key: '9', name: '3号楼地下室枪机', code: 'CAM-009', location: '3号楼地下室', group: '3号楼', status: '在线', type: '枪机', lastOnline: '2025-05-01 09:20', install: '2022-05-25', manager: '赵云', logs: [{ time: '2025-05-22', action: '固件升级', user: '管理员' }] },
+  { key: '10', name: '1号楼门厅球机', code: 'CAM-010', location: '1号楼门厅', group: '1号楼', status: '离线', type: '球机', lastOnline: '2025-05-29 16:00', install: '2022-03-15', manager: '王建国', logs: [{ time: '2025-05-15', action: '维护保养', user: '王建国' }] },
 ];
 
 const groups = ['全部', '1号楼', '2号楼', '3号楼'];

@@ -7,16 +7,28 @@ const { Option } = Select;
 
 // 用户管理数据（2025年5月）
 const userList = [
-  { id: 1, username: 'admin', name: '系统管理员', department: '信息部', role: '超级管理员', status: '启用', lastLogin: '2025-05-10 08:00:00' },
-  { id: 2, username: 'zhangsan', name: '张三', department: '安保部', role: '安保主管', status: '启用', lastLogin: '2025-05-10 09:00:00' },
-  { id: 3, username: 'lisi', name: '李四', department: '行政部', role: '普通用户', status: '禁用', lastLogin: '2025-05-09 16:00:00' },
+  { id: 1, username: 'admin', name: '王建国', department: '信息部', role: '超级管理员', status: '启用', lastLogin: '2025-05-10 08:00:00' },
+  { id: 2, username: 'zhangsan', name: '李明', department: '安保部', role: '安保主管', status: '启用', lastLogin: '2025-05-10 09:00:00' },
+  { id: 3, username: 'lisi', name: '赵倩', department: '行政部', role: '普通用户', status: '禁用', lastLogin: '2025-05-09 16:00:00' },
+  { id: 4, username: 'wangwu', name: '陈伟', department: '财务部', role: '普通用户', status: '启用', lastLogin: '2025-05-08 14:30:00' },
+  { id: 5, username: 'zhaoliu', name: '刘洋', department: '技术部', role: '普通用户', status: '启用', lastLogin: '2025-05-07 11:20:00' },
+  { id: 6, username: 'sunqi', name: '孙婷', department: '管理层', role: '安保主管', status: '禁用', lastLogin: '2025-05-06 10:10:00' },
+  { id: 7, username: 'liuba', name: '周磊', department: '行政部', role: '普通用户', status: '启用', lastLogin: '2025-05-05 09:50:00' },
+  { id: 8, username: 'chenjiu', name: '马丽', department: '信息部', role: '普通用户', status: '启用', lastLogin: '2025-05-04 08:40:00' },
+  { id: 9, username: 'yangshi', name: '杨帆', department: '财务部', role: '普通用户', status: '禁用', lastLogin: '2025-05-03 07:30:00' },
+  { id: 10, username: 'huangyi', name: '黄俊', department: '安保部', role: '安保主管', status: '启用', lastLogin: '2025-05-02 06:20:00' },
+  { id: 11, username: 'zhouxin', name: '周欣', department: '技术部', role: '普通用户', status: '启用', lastLogin: '2025-05-01 12:00:00' },
+  { id: 12, username: 'wutian', name: '吴天宇', department: '管理层', role: '超级管理员', status: '启用', lastLogin: '2025-05-01 09:00:00' },
 ];
 
 // 角色权限数据
 const roleList = [
-  { id: 1, name: '超级管理员', description: '系统最高权限', userCount: 1, createTime: '2025-05-01 00:00:00' },
+  { id: 1, name: '超级管理员', description: '系统最高权限', userCount: 2, createTime: '2025-05-01 00:00:00' },
   { id: 2, name: '安保主管', description: '安保系统管理权限', userCount: 3, createTime: '2025-05-01 00:00:00' },
   { id: 3, name: '普通用户', description: '基础操作权限', userCount: 20, createTime: '2025-05-01 00:00:00' },
+  { id: 4, name: '财务专员', description: '财务数据管理权限', userCount: 2, createTime: '2025-05-02 00:00:00' },
+  { id: 5, name: '技术支持', description: '技术部相关权限', userCount: 2, createTime: '2025-05-03 00:00:00' },
+  { id: 6, name: '访客管理', description: '访客预约与审核权限', userCount: 1, createTime: '2025-05-04 00:00:00' },
 ];
 
 // 系统配置数据
@@ -25,6 +37,12 @@ const configList = [
   { id: 2, name: '系统Logo', key: 'systemLogo', value: 'logo.png', type: 'image' },
   { id: 3, name: '登录验证码', key: 'loginCaptcha', value: true, type: 'switch' },
   { id: 4, name: '密码有效期', key: 'passwordExpireDays', value: 90, type: 'number' },
+  { id: 5, name: '数据备份周期', key: 'backupCycle', value: '每周', type: 'text' },
+  { id: 6, name: '最大登录失败次数', key: 'maxLoginFail', value: 5, type: 'number' },
+  { id: 7, name: '支持多语言', key: 'multiLang', value: false, type: 'switch' },
+  { id: 8, name: '默认主题色', key: 'themeColor', value: '#1890ff', type: 'text' },
+  { id: 9, name: '启用消息推送', key: 'msgPush', value: true, type: 'switch' },
+  { id: 10, name: '允许外部访问', key: 'externalAccess', value: false, type: 'switch' },
 ];
 
 // 权限树数据

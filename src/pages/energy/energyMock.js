@@ -32,10 +32,10 @@ export const initGasList = Array.from({length: 25}, (_,i) => ({
 }));
 
 export const statData = [
-  { date: '2025-01', electric: 210, water: 60, gas: 40 },
-  { date: '2025-02', electric: 220, water: 65, gas: 45 },
-  { date: '2025-03', electric: 230, water: 70, gas: 50 },
-  { date: '2025-04', electric: 250, water: 75, gas: 55 },
+  { date: '2025-05', electric: 210, water: 60, gas: 40 },
+  { date: '2025-05', electric: 220, water: 65, gas: 45 },
+  { date: '2025-05', electric: 230, water: 70, gas: 50 },
+  { date: '2025-05', electric: 250, water: 75, gas: 55 },
   { date: '2025-05', electric: 260, water: 80, gas: 60 },
 ];
 

@@ -15,7 +15,7 @@ export default function SystemSetting() {
 
   return (
     <Card title="系统基础设置" bordered>
-      <Form form={form} layout="vertical" initialValues={{ sysName: '智慧园区管理平台', loginCaptcha: true, maxLogin: 5 }}>
+      <Form form={form} layout="vertical" initialValues={{ sysName: '山东时代智慧园区综合管理平台', loginCaptcha: true, maxLogin: 5 }}>
         <Form.Item label="系统名称" name="sysName">
           <Input placeholder="请输入系统名称" />
         </Form.Item>

@@ -8,6 +8,14 @@ export const gateList = [
   { id: 6, name: 'B区入口', status: '开启', location: 'B区东侧', type: '车行', manager: '李思远', lng: 117.123, lat: 36.649 },
   { id: 7, name: 'C区入口', status: '开启', location: 'C区南侧', type: '人行', manager: '孙嘉禾', lng: 117.127, lat: 36.652 },
   { id: 8, name: '地下车库入口', status: '关闭', location: '地下车库', type: '车行', manager: '王子睿', lng: 117.119, lat: 36.646 },
+  { id: 9, name: 'D区入口', status: '开启', location: 'D区西侧', type: '车行', manager: '高子墨', lng: 117.128, lat: 36.653 },
+  { id: 10, name: 'E区入口', status: '关闭', location: 'E区南侧', type: '人行', manager: '许思辰', lng: 117.130, lat: 36.654 },
+  { id: 11, name: '访客通道', status: '开启', location: '主楼东侧', type: '人行', manager: '罗一帆', lng: 117.126, lat: 36.650 },
+  { id: 12, name: '货运通道', status: '关闭', location: '后勤区', type: '车行', manager: '贾嘉懿', lng: 117.117, lat: 36.645 },
+  { id: 13, name: 'VIP专用门', status: '开启', location: '主楼北侧', type: '车行', manager: '邹梓涵', lng: 117.124, lat: 36.652 },
+  { id: 14, name: '员工通道', status: '开启', location: '办公楼西侧', type: '人行', manager: '林梓萱', lng: 117.115, lat: 36.648 },
+  { id: 15, name: '西南门', status: '关闭', location: '西南角', type: '车行', manager: '高梓轩', lng: 117.116, lat: 36.644 },
+  { id: 16, name: '东南门', status: '开启', location: '东南角', type: '人行', manager: '宋子墨', lng: 117.131, lat: 36.643 },
 ];
 export const areaList = [
   { id: 1, name: 'A区', total: 120, used: 80, lng: 117.121, lat: 36.651 },

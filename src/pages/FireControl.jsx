@@ -21,8 +21,8 @@ const alarmList = [
 
 // 消防巡检数据
 const inspectionList = [
-  { id: 21, task: '5月例行巡检', device: '灭火器', inspector: '张三', time: '2025-05-13 14:00:00', result: '正常' },
-  { id: 22, task: '5月例行巡检', device: '喷淋系统', inspector: '李四', time: '2025-05-13 14:30:00', result: '异常' },
+  { id: 21, task: '5月例行巡检', device: '灭火器', inspector: '李明', time: '2025-05-13 14:00:00', result: '正常' },
+  { id: 22, task: '5月例行巡检', device: '喷淋系统', inspector: '赵秀玲', time: '2025-05-13 14:30:00', result: '异常' },
 ];
 
 // 消防统计报表数据

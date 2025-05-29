@@ -32,8 +32,8 @@ const feeList = [
 
 // 模拟用户布控
 const controlList = [
-  { id: 401, user: '张三', plate: '鲁A12345', type: '黑名单', status: '布控中', time: '2025-05-10 09:00:00' },
-  { id: 402, user: '李四', plate: '鲁B54321', type: '白名单', status: '已解除', time: '2025-05-11 10:00:00' },
+  { id: 401, user: '李明', plate: '鲁A12345', type: '黑名单', status: '布控中', time: '2025-05-10 09:00:00' },
+  { id: 402, user: '赵秀玲', plate: '鲁B54321', type: '白名单', status: '已解除', time: '2025-05-11 10:00:00' },
 ];
 
 // 模拟超速报警

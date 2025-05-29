@@ -20,8 +20,8 @@ const faultList = [
 
 // 自动巡检数据
 const patrolList = [
-  { id: 21, task: '5月例行巡检', device: '空调', staff: '张三', time: '2025-05-13 14:00:00', result: '正常' },
-  { id: 22, task: '5月例行巡检', device: '电梯', staff: '李四', time: '2025-05-13 14:30:00', result: '异常' },
+  { id: 21, task: '5月例行巡检', device: '空调', staff: '李明', time: '2025-05-13 14:00:00', result: '正常' },
+  { id: 22, task: '5月例行巡检', device: '电梯', staff: '赵秀玲', time: '2025-05-13 14:30:00', result: '异常' },
 ];
 
 // 运维报表数据

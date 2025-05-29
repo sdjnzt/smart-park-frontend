@@ -3,9 +3,9 @@ import { Card, Row, Col, Tag, Button, Modal, List, Badge, message } from 'antd';
 import * as echarts from 'echarts';
 
 const mockThermals = [
-  { key: '1', name: '1号楼北门热成像', temp: 36.5, status: '正常', url: '/static/888.png', history: [36.2, 36.4, 36.5, 36.5, 36.6], alarms: [], maintain: '2024-07-01' },
+  { key: '1', name: '1号楼北门热成像', temp: 36.5, status: '正常', url: '/static/888.png', history: [36.2, 36.4, 36.5, 36.5, 36.6], alarms: [], maintain: '2025-07-01' },
   { key: '2', name: '2号楼南门热成像', temp: 38.2, status: '高温预警', url: '/static/777.png', history: [36.8, 37.2, 37.8, 38.0, 38.2], alarms: ['2025-05-01 09:10 高温38.2℃'], maintain: '2025-05-10' },
-  { key: '3', name: '3号楼西门热成像', temp: 35.9, status: '正常', url: '/static/555.png', history: [35.7, 35.8, 35.9, 35.9, 35.9], alarms: [], maintain: '2024-08-01' },
+  { key: '3', name: '3号楼西门热成像', temp: 35.9, status: '正常', url: '/static/555.png', history: [35.7, 35.8, 35.9, 35.9, 35.9], alarms: [], maintain: '2025-05-01' },
 ];
 
 export default function ThermalView() {
