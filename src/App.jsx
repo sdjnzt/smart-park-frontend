@@ -261,7 +261,7 @@ function App() {
         }}
       >
         <div className="logo-container">
-          <h1 className="logo-text">{collapsed ? 'SP' : '智慧园区'}</h1>
+          <h1 className="logo-text">{collapsed ? 'SP' : '综合管理平台'}</h1>
         </div>
         <Menu
           theme="dark"

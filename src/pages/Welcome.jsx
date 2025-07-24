@@ -54,14 +54,14 @@ export default function Welcome() {
               <BankOutlined style={{ fontSize: 72, color: '#1890ff', filter: 'drop-shadow(0 4px 16px #bae7ff)' }} />
             </div>
             <Title level={1} style={{ marginBottom: 8, fontWeight: 800, color: '#222', letterSpacing: 2, textShadow: '0 2px 12px #e6f7ff' }}>
-              山东时代智慧园区综合管理平台
+                综合管理平台
             </Title>
             <Text style={{ fontSize: 20, color: '#1890ff', fontWeight: 600, letterSpacing: 1, marginBottom: 16, display: 'block' }}>
               智慧 · 高端 · 专业 · 现代化
             </Text>
             <Paragraph style={{ fontSize: 18, color: '#666', marginBottom: 32, lineHeight: 1.8 }}>
-              欢迎使用现代化、高端、专业的智慧园区管理系统。<br />
-              提供门禁、视频、访客、办公、停车、维护、能耗、消防、系统等全方位数字化管理，助力园区高效运营与智能决策。
+              欢迎使用现代化、高端、专业的管理系统。<br />
+              提供门禁、视频、访客、办公、停车、维护、能耗、消防、系统等全方位数字化管理，助力高效运营与智能决策。
             </Paragraph>
             <Button
               type="primary"
