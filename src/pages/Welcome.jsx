@@ -54,7 +54,7 @@ export default function Welcome() {
               <BankOutlined style={{ fontSize: 72, color: '#1890ff', filter: 'drop-shadow(0 4px 16px #bae7ff)' }} />
             </div>
             <Title level={1} style={{ marginBottom: 8, fontWeight: 800, color: '#222', letterSpacing: 2, textShadow: '0 2px 12px #e6f7ff' }}>
-                综合管理平台
+                济宁市兖州区文化路小学综合管理平台
             </Title>
             <Text style={{ fontSize: 20, color: '#1890ff', fontWeight: 600, letterSpacing: 1, marginBottom: 16, display: 'block' }}>
               智慧 · 高端 · 专业 · 现代化
